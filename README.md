@@ -41,7 +41,7 @@ Eco-Furnish is a cutting-edge, eco-friendly furniture and home décor platform d
 ## Live Demo  
 
 Check out the live demo of our website on Vercel:  
-[https://figma-to-next-js-sofa-website.vercel.app/](https://figma-to-next-js-sofa-website.vercel.app/)  
+[https://eco-furnish-website.vercel.app/](https://eco-furnish-website.vercel.app/)  
 
 ## Overview  
 
