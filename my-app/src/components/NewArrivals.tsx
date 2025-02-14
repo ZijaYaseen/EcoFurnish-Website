@@ -14,12 +14,12 @@ const NewArrivals = ({product}:OneProduct) => {
           <Image src={product.imagePath} 
           width={500} height={500} alt="sofa" 
           className='rounded-md'
-          priority={false} // Default lazy loading
+          priority
           ></Image>
         
       
         {/* Text and Button Section */}
-        <div className="flex flex-col items-center w-full lg:w-[40%] justify-center text-center">
+        <div className="flex flex-col w-full lg:w-[40%] text-center">
           <p className="font-medium text-2xl">New Arrivals</p>
           <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl">{product.name}</h2>
           <a 

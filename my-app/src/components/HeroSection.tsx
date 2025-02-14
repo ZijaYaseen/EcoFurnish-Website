@@ -34,6 +34,7 @@ const HeroSection = ({ product }: HeroSectionProps) => {
   alt={product.name}
   width={500}
   height={200}
+  priority
   
 />
 
