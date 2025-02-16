@@ -147,17 +147,10 @@ const Header = (props: { bgColor: string; shadow: string }) => {
             />
           </div>
           <SearchBar />
-          <a
-            href="https://www.amazon.com/your-wishlist-page"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href={"/Wishlist"}>
             <CiHeart size={28} className="w-7 h-7 lg:w-8 lg:h-8" />
-          </a>
-          <a
-            href="https://www.amazon.com/your-cart-page"
-            target="_blank"
-            rel="noopener noreferrer"
+          </Link>
+          <Link href={"/Cart"}
           >
             <div className="relative">
               <CiShoppingCart
@@ -170,7 +163,7 @@ const Header = (props: { bgColor: string; shadow: string }) => {
                 </div>
               )}
             </div>
-          </a>
+          </Link>
         </div>
       </nav>
 
