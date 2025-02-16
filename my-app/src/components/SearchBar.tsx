@@ -36,7 +36,7 @@ const SearchBar: React.FC = () => {
         )}
       </div>
       {searchOpen && (
-        <div className="fixed z-10 md:top-24 top-16 left-4 right-4 md:right-8 md:left-8 max-w-[1440vw]">
+        <div className="fixed z-10 md:top-20 top-16 left-4 right-4 md:right-8 md:left-8 max-w-[1440vw]">
           <div className="flex items-center gap-2 w-full">
             <input
               type="text"

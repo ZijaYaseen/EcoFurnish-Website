@@ -8,7 +8,7 @@ interface OneProduct {
 const NewArrivals = ({product}:OneProduct) => {
   return (
         /* home page 4th section */
-         <div className="flex flex-col lg:flex-row justify-center gap-14 items-center bg-[#FFF9E5] py-10 px-6 sm:px-10">
+         <div className="flex flex-col lg:flex-row justify-center gap-4 md:gap-14 items-center bg-[#FFF9E5] py-10 px-6 sm:px-10">
         {/* Image Section */}
     
           <Image src={product.imagePath} 
