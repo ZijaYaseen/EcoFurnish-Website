@@ -50,8 +50,8 @@ export async function FeaturedSectionData() {
   `;
 
    const data = client.fetch(query);
-   console.log(data);
-   return data
+   console.log(`sanity data` + data)
+   return data;
    
 };
 
@@ -69,7 +69,7 @@ export async function TopPicksData() {
   return await client.fetch(query);
 };
 
-// One product data
+// New Arrivals product data
 export async function NewArrivalsSanity() {
   const query = `
   *[_type == "product" && "One Product" in tags] {

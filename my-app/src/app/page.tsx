@@ -15,7 +15,9 @@ const Home = async () => {
 
 const HeroSectionProductData = await HeroSectionData();
 
-const FeaturedSectionProductData = await FeaturedSectionData()
+const FeaturedSectionProductData = await FeaturedSectionData();
+console.log(FeaturedSectionProductData);
+
 
 const TopPicksProductData = await TopPicksData();
 
@@ -36,7 +38,6 @@ const NewArrivalsData = await NewArrivalsSanity()
 
     {/* Home Page 2nd section  Featured section*/}
     <FeaturedSection products={FeaturedSectionProductData} />
-
 
     {/* Home page 3rd section */}
     <TopPicks products={TopPicksProductData}/>
