@@ -147,10 +147,10 @@ const Header = (props: { bgColor: string; shadow: string }) => {
             />
           </div>
           <SearchBar />
-          <Link href={"/Wishlist"}>
+          <Link href="/Wishlist">
             <CiHeart size={28} className="w-7 h-7 lg:w-8 lg:h-8" />
           </Link>
-          <Link href={"/Cart"}
+          <Link href="/Cart"
           >
             <div className="relative">
               <CiShoppingCart
