@@ -16,8 +16,6 @@ const Home = async () => {
 const HeroSectionProductData = await HeroSectionData();
 
 const FeaturedSectionProductData = await FeaturedSectionData();
-console.log(FeaturedSectionProductData);
-
 
 const TopPicksProductData = await TopPicksData();
 

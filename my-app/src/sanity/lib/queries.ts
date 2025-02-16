@@ -49,9 +49,8 @@ export async function FeaturedSectionData() {
   }
   `;
 
-   const data = client.fetch(query);
-   console.log(`sanity data` + data)
-   return data;
+   return client.fetch(query);
+   
    
 };
 
