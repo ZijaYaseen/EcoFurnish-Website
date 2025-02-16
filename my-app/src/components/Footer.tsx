@@ -68,7 +68,7 @@ const Footer = () => {
       {/* Bottom Border and Copyright */}
       <div className="w-[95%] sm:w-[85%] mx-auto border-t border-[#D9D9D9] flex justify-start">
         <p className="font-normal text-base text-start p-5">
-          2022 Meubel House. All rights reserved.
+          2025 EcoFurnish Home Decor Website. All rights reserved.
         </p>
       </div>
     </footer>

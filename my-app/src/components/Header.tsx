@@ -9,6 +9,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
 import { useRouter } from "next/navigation";
+import { MdSupervisorAccount } from "react-icons/md";
 import { UseAppSelector } from "@/redux/hooks";
 
 // NavItem interface used for both desktop and mobile
@@ -102,7 +103,7 @@ const Header = (props: { bgColor: string; shadow: string }) => {
           className="hidden md:flex flex-1 items-center justify-center"
           onMouseLeave={() => setActiveMegaMenu(null)}
         >
-          <ul className="flex space-x-8 uppercase tracking-wider text-sm font-medium">
+          <ul className="flex space-x-6 uppercase tracking-wider text-sm font-medium">
             {NavMbl.map((item) => (
               <li
                 key={item.name}
@@ -225,8 +226,8 @@ const Header = (props: { bgColor: string; shadow: string }) => {
                 onClick={handleBack}
                 className="flex items-center text-lg gap-1"
               >
-                <MdArrowBack size={20} />
-                <span>Back</span>
+                <MdArrowBack size={20} className="mr-2"/>
+                <span className="font-semibold text-xl">Back</span>
               </button>
             ) : (
               <span className="font-semibold text-xl">Menu</span>
@@ -241,7 +242,7 @@ const Header = (props: { bgColor: string; shadow: string }) => {
             />
           </div>
           {/* Mobile Menu Items */}
-          <ul className="flex flex-col space-y-7 text-start p-8 max-h-[70vh] overflow-y-auto">
+          <ul className="flex flex-col space-y-4 text-start p-8 max-h-[70vh] overflow-y-auto">
             {currentMenu.map((item) => (
               <li
                 key={item.name}
@@ -273,13 +274,14 @@ const Header = (props: { bgColor: string; shadow: string }) => {
           </ul>
           {/* Mobile Account Section */}
           <div className="absolute bottom-0 bg-black w-full">
-            <div
-              onClick={handleLoginClick}
-              className="cursor-pointer flex p-6 gap-1 pb-14"
-            >
-              <CiUser size={28} className="w-6 h-6" color="white" />
-              <p className="text-white">Account</p>
-            </div>
+          <div
+  onClick={handleLoginClick}
+  className="cursor-pointer flex items-center p-6 gap-2 pb-14"
+>
+  <MdSupervisorAccount size={30} className="text-white" />
+  <p className="text-white text-center">Account</p>
+</div>
+
           </div>
         </div>
       )}
