@@ -40,7 +40,7 @@ const NewArrivalsData = await NewArrivalsSanity()
     {/* Home page 3rd section */}
     <TopPicks products={TopPicksProductData}/>
 
-     {/* Home Page $th Section */}
+     {/* Home Page 4th Section */}
      <NewArrivals product={NewArrivalsData[0]}/>
 
 
